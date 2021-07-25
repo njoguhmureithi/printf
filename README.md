@@ -43,4 +43,4 @@ These are all the tasks of this project, the ones that are completed link to the
   * d : converts input into a base 10 integer
   * i : converts input into an integer
 2. [Just because it's in print doesn't mean it's the gospel](https://github.com/njoguhmureithi/printf/blob/main/print_bases.c)
-Create a man page for your function
+* Create a man page for your function
