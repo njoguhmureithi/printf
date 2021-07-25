@@ -38,8 +38,7 @@ These are all the tasks of this project, the ones that are completed link to the
   * c : converts input into a character
   * s : converts input into a string
  
-1. [Education is when you read the fine print. Experience is what you get if you don't]
-(https://github.com/njoguhmureithi/printf/blob/main/print_nums.c)
+1. [Education is when you read the fine print. Experience is what you get if you don't](https://github.com/njoguhmureithi/printf/blob/main/print_nums.c)
 * Handle the following conversion specifiers:
   * d : converts input into a base 10 integer
   * i : converts input into an integer
