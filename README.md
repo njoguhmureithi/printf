@@ -37,7 +37,7 @@ These are all the tasks of this project, the ones that are completed link to the
 * Write a function that produces output according to format.
   * c : converts input into a character
   * s : converts input into a string
-  * 
+ 
 1. Education is when you read the fine print. Experience is what you get if you don't
 * Handle the following conversion specifiers:
   * d : converts input into a base 10 integer
