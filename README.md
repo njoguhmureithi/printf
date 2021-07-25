@@ -32,7 +32,7 @@ What you should learn from this project:
 # Tasks #
 These are all the tasks of this project, the ones that are completed link to the corresponding files.
 
-0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+0. [I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life](https://github.com/njoguhmureithi/printf/blob/main/_printf.c)
 
 * Write a function that produces output according to format.
   * c : converts input into a character
