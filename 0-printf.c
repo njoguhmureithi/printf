@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
+#include <stdlib.h>
 
 int _printf(const char *format, ...)
 {
@@ -13,6 +14,7 @@ int _printf(const char *format, ...)
 	char decString[10];
 	char *pString;
 	va_list ap;
+
 	va_start(ap, format);
 	while (*format)
 	{
@@ -23,14 +25,14 @@ int _printf(const char *format, ...)
 			{
 				case 's':
 					pString = va_arg(ap, char*);
-					write(1, pString, strlen(pString));
+					fputs(pString, stdout);
 					format++;
 					count += strlen(pString);
 					break;
 
 				case 'i':
 					printInt = va_arg(ap, int);
-					itoa(printInt, intString, 10);
+			                itoa(printInt, intString, 10);
 					fputs(intString, stdout);
 					format++;
 					count += strlen(intString);
@@ -45,10 +47,10 @@ int _printf(const char *format, ...)
 					break;
 
 				case 'c':
-					ch = va_arg(ap, char);
-					write(1, &ch, strlen(ch));
+					ch = va_arg(ap, int);
+					fputs(&ch,stdout);
 					format++;
-					count += strlen(ch);
+					count ++;
 					break;
 
 				case '%':
@@ -66,13 +68,14 @@ int _printf(const char *format, ...)
 					format++;
 					count += 2;
 			}
-			else
-			{
-				putchar(*format);
-				format++;
-				count++;
-			}
 		}
+		else
+		{
+ 			putchar(*format);
+			format++;
+			count++;
+		}
+	}
 		va_end(ap);
 		return (count);
 	}
