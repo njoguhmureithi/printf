@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdarg.h>
 
 /**
  * _printf - produces output according to a format.
@@ -45,3 +46,4 @@ int _printf(const char *format, ...)
 	va_end(arguments);
 	return (count);
 }
+
